@@ -1,0 +1,229 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* BODY */
+body {
+font-family: Arial, sans-serif;
+background: #0b0b0b;
+color: #ffffff;
+line-height: 1.6;
+}
+
+/* CONTAINER (controls width) */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 40px;
+}
+
+/* NAVBAR */
+
+#logo {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#logo:hover {
+    color: rgb(148, 146, 146);
+}
+
+.navbar {
+position: sticky;
+top: 0;
+background: #0b0b0b;
+padding: 20px 0;
+}
+
+.nav-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-links a {
+margin-left: 20px;
+text-decoration: none;
+color: white;
+}
+
+.nav-links a:hover {
+    color: rgb(148, 146, 146);
+}
+
+/* DROPDOWN */
+.dropdown {
+position: relative;
+display: inline-block;
+margin-left: 20px;
+}
+
+.dropdown-menu {
+display: none;
+position: absolute;
+background: transparent;
+padding: 0;
+width: 150px;
+margin-left: -9px;
+}
+
+.dropdown-menu a {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+#dropdown:hover {
+    color: rgb(148, 146, 146);
+}
+
+/* HERO */
+.hero {
+padding: 150px 0;
+}
+
+.hero h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.hero p {
+max-width: 600px;
+margin-bottom: 30px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 20px;
+}
+
+/* BUTTONS */
+.btn {
+padding: 12px 24px;
+text-decoration: none;
+border-radius: 6px;
+}
+
+.primary {
+background: #2563eb;
+color: white;
+}
+
+.primary:hover {
+background: #032570;
+color: white;
+}
+
+.visit {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.secondary {
+border: 1px solid white;
+color: white;
+}
+
+.secondary:hover {
+background: white;
+color: black;
+}
+
+/* CENTER TEXT */
+.center-text {
+text-align: center;
+}
+
+/* IDENTITY */
+.identity {
+padding: 100px 0;
+margin-top: -80px;
+}
+
+/* GRID */
+.grid-4 {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+/* CARD */
+.card {
+padding: 20px;
+border: 1px solid #222;
+}
+
+/* PRODUCT */
+.subheading {
+    font-size: 300%;
+}
+
+.product {
+padding: 120px 0;
+}
+
+.product-layout {
+display: flex;
+justify-content: space-between;
+}
+
+/* VISION */
+.vision {
+padding: 120px 0;
+margin-top: -100px;
+}
+
+/* FOUNDERS */
+.founders {
+padding: 100px 0;
+}
+
+.contact {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+.contact:hover {
+    color: #2563eb;
+}
+
+.founders-grid {
+display: flex;
+gap: 40px;
+}
+
+/* CTA */
+.cta {
+padding: 120px 0;
+margin-top: -100px;
+}
+
+.explore {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+.footer {
+padding: 60px 0;
+text-align: center;
+border-top: 1px solid #222;
+}
