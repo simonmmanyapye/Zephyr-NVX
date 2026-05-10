@@ -227,3 +227,139 @@ padding: 60px 0;
 text-align: center;
 border-top: 1px solid #222;
 }
+/* =========================
+   MOBILE RESPONSIVE STYLES
+========================= */
+
+@media (max-width: 1024px) {
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* NAVBAR */
+  .nav-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+  }
+
+  .dropdown {
+    margin-left: 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  /* PRINCIPLES GRID */
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* PRODUCT */
+  .product {
+    padding: 80px 0;
+  }
+
+  .product-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .subheading {
+    font-size: 40px;
+  }
+
+  /* FOUNDERS */
+  .founders-grid {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* SPACING */
+  .identity,
+  .vision,
+  .cta,
+  .founders {
+    padding: 80px 0;
+    margin-top: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #logo {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .subheading {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+}
