@@ -3,15 +3,10 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Zephyr NVX</title>
-
   <link rel="stylesheet" href="zstyles.css">
-
 </head>
 <body>
 
@@ -131,6 +126,26 @@
       <p>© Zephyr NVX</p>
     </div>
   </footer>
+
+  <script>
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
+  const dropdownButton = document.getElementById("dropdown");
+
+  dropdownButton.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("show");
+  });
+
+  // Optional: close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdownMenu.classList.remove("show");
+    }
+  });
+</script>
+
 </body>
+
+</html>
 
 </html>
