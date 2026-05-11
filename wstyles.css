@@ -47,8 +47,8 @@ padding: 20px 0;
 
 .nav-content {
 display: flex;
-justify-content: space-between;
 align-items: center;
+justify-content: space-between;
 }
 
 .nav-links a {
@@ -267,4 +267,242 @@ color: white;
 padding: 20px 0;
 background: #111;
 color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* CONTAINER */
+  .container {
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+
+  /* NAVBAR */
+  .nav-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .tag {
+    margin-top: 30px;
+  }
+
+  /* BUTTONS */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  /* PROBLEMS */
+  .problems {
+    text-align: center;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* SOLUTION */
+  .solution {
+    text-align: center;
+  }
+
+  .split {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .split div {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .solution ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  /* HOW */
+  .how {
+    text-align: center;
+  }
+
+  .steps {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .steps div {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* FEATURES */
+  .features {
+    text-align: center;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* PRICING */
+  .pricing {
+    text-align: center;
+  }
+
+  .pricing-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .price-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* CTA */
+  .cta {
+    text-align: center;
+  }
+
+  .contact-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contact-dropdown a {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+  }
+
+  /* SECTION SPACING */
+  .hero,
+  .problems,
+  .solution,
+  .how,
+  .features,
+  .pricing,
+  .cta {
+    padding: 80px 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #logo {
+    font-size: 24px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .subheading {
+    font-size: 32px;
+  }
+
+  .feature-card,
+  .price-card,
+  .card {
+    padding: 20px;
+  }
+
 }
